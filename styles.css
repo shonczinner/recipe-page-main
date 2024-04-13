@@ -27,12 +27,21 @@ img{
         border-radius: 1rem;
     }
 
-    #recipe-container *{
+    #recipe-container img{
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    #recipe-container p{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
     
     
     img{
