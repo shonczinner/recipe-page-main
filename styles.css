@@ -1,0 +1,44 @@
+.attribution { font-size: 11px; text-align: center; visibility: hidden; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body {
+    background-color:  hsl(329, 22%, 68%);
+    padding: 0px;
+    margin:0px;
+}
+
+
+img{
+    height:100%;
+    width:100%;
+}
+
+
+@media screen and (min-width: 400px) {
+    body {
+        background-color: hsl(330, 68%, 45%);
+    }
+
+    #recipe-container {
+        margin-left: max(25% - 100px,0px);
+        margin-right: max(25% - 100px,0px);
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border-radius: 1rem;
+    }
+
+    #recipe-container *{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    
+    img{
+        height:90%;
+        width:90%;
+        border-radius:1rem;
+    }
+    
+}
+
