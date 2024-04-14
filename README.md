@@ -18,7 +18,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![See the screenshot here.](./screenshot.jpg)
+![See the screenshot here.](https://raw.githubusercontent.com/shonczinner/recipe-page-main/main/screenshot.PNG)
 
 ### Links
 
