@@ -1,5 +1,15 @@
 .attribution {visibility: hidden;}
 
+@font-face {
+    font-family: outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  }
+
+@font-face {
+font-family: young;
+src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
 :root {
     --Nutmeg: hsl(14, 45%, 36%);
     --DarkRaspberry: hsl(332, 51%, 32%);
@@ -16,17 +26,21 @@ body {
     background-color:  white    ;
     padding: 0px;
     margin:0px;
+    font-family:outfit;
+    color: var(--WengeBrown);
 }
 
 #recipe-container >*:not(img){
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+
 h3{
-    color:var(--DarkRaspberry)
+    color:var(--DarkRaspberry);
+    margin-bottom:0;
 }
 
 
@@ -45,35 +59,37 @@ th{
     font-weight:normal;
 }
 
-ul li{
-    list-style: none;
-}
 
-ul li:before{
-    content: '\2022';
+
+li::marker{
     color: var(--Nutmeg);
-    display: block;
-    height: 5;
-    width: 5;
-    left: -0.7em;
-    top: 1.2em;
-    position: relative;
+    font-weight: bold;
 }
 
-ol {list-style: none; counter-reset: li}
-
-ol li{
-    counter-increment: li
+li:before{
+    content: "";
+    padding-left: 20px;
 }
 
-ol li:before{
-    content: counter(li)"."; color: var(--Nutmeg);
-        display: inline-block; width: 1em; margin-left: -1.5em;
-        margin-right: 0.5em; text-align: right; direction: rtl
+ol,ul{
+    list-style-position: inside;
+    padding-left: 0;
 }
+
+
+
+h1{
+    color: black;
+    margin: 0;
+}
+
 
 td{
     font-weight:bold;
+}
+
+h1, h2{
+    font-family: young;
 }
 
 h2, td{
@@ -81,14 +97,26 @@ h2, td{
 }
 
 #prep-time-container{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color:var(--RoseWhite);
     border-radius: 1rem;
 }
 
+tr > * {
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom: 1px solid lightgrey;  
+}
+
+  
+
+tr:last-child > *
+{
+   border-bottom: none;
+}
 
 @media screen and (min-width: 400px) {
     body {
@@ -116,9 +144,6 @@ h2, td{
         height:90%;
         width:90%;
         border-radius:1rem;
-    }
-
-    
-    
+    }   
 }
 
