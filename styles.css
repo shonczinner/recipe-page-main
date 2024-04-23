@@ -1,4 +1,5 @@
-.attribution {visibility: hidden;}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
 
 @font-face {
     font-family: outfit;
@@ -28,6 +29,7 @@ body {
     margin:0px;
     font-family:outfit;
     color: var(--WengeBrown);
+    line-height: 1.6;
 }
 
 #recipe-container >*:not(img){
